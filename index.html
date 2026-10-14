@@ -165,7 +165,7 @@ footer b{font:600 18px "Noto Serif KR",serif;letter-spacing:.2em;color:#F1E8DB;d
 // 연락처 정보를 여기서 수정하세요
 const C={email:"Toinmok_wood@naver.com",tel:"010-2238-1101",insta:"TOINMOK",biz:"",store:""}; // store: 스마트스토어 주소를 따옴표 안에 넣으세요
 const SP=[["우드플레이트 No.1","라이브엣지 · 암보이나 벌 마블링","plate1",""],["우드플레이트 No.2","깊은 붉은빛 심재 · 라이브엣지","plate2",""],["우드플레이트 No.3","긴 형태의 우드플레이트","plate3",""],["우드플레이트 No.4","바크 엣지의 묵직한 무게감","plate4",""]];
-function shop(){document.getElementById("shopgrid").innerHTML=SP.map(p=>{const u=p[3]||C.store;return `<article class="prod"><img data-i="${p[2]}" alt="${p[0]}" loading="lazy"><div><h3>${p[0]}</h3><p>${p[1]}<br>가격은 스토어에서 확인</p><a class="buy" ${u?`href="${u}" target="_blank" rel="noopener"`:`href="#contact"`}>${u?"구매하기 →":"구매 문의"}</a></div></article>`}).join("");fill()}
+function shop(){document.getElementById("shopgrid").innerHTML=SP.map(p=>{const u=p[3]||C.store;return `<article class="prod"><img data-i="${p[2]}" alt="${p[0]}" loading="lazy"><div><h3>${p[0]}</h3><p>${p[1]}<br>가격은 스토어에서 확인</p><a class="buy" ${u?`href="${u}" target="_blank" rel="noopener"`:`href="#contact"`}>구매하기 →</a></div></article>`}).join("");fill()}
 const P=[
 ["티 테이블","라이브엣지 티 테이블","가로 40~70 · 세로 30~70 · 높이 7~12cm","image16"],
 ["티 테이블","티 테이블 컬렉션","다리발 5cm · 7cm 선택 가능","image25"],
